@@ -9,27 +9,6 @@ library(tseries)
 
 
 
-#rain <- read.csv("C:/Users/Victor/Desktop/chuva.csv")
-#unique(rain$nome_estacao_original)
-#
-#t <- rain %>% select(nome_estacao_original, tempo, vintequatrohoras ) %>% filter(nome_estacao_original == "MORRO DO BUMBA", vintequatrohoras != "NULL")
-#sapply(t, class)
-#
-#bumba <-  data.frame(chuva = as.double(t$vintequatrohoras), tempo = as.POSIXct(t$tempo, tz="UTC" ))
-#bumba <- bumba %>% filter(tempo <= as.Date("2021-01-01 00:00:00"))
-#
-#p <- ggplot(bumba, aes(x=tempo, y=chuva)) +geom_line() + xlab("")
-#p
-#
-#eco <- economics
-#head(eco)
-#
-#date_base <- ggplot(eco, aes(date, psavert)) + 
-#  geom_line(na.rm = TRUE) +
-#  labs(x = NULL, y = NULL)
-#
-#date_base 
-
 birth <- read.csv("C:/Users/Victor/Desktop/births.csv")
 head(birth)
 
@@ -79,14 +58,6 @@ b2 <- ggplot(df_Birth, aes(x=dia, y=births)) +geom_line() + xlab("") +
 
 b2
 
-
-#z_airP <- zoo(AirPassengers)
-#AirP <- data.frame(passageiros = coredata(zoo(AirPassengers)), passageiros_cm = cummean(AirPassengers))
-
-#q <ggplot(AirP, aes(y = AirP$passageiros)) +geom_line() + xlab("")
-          
-
-#q
 
 
 #Normalizado
